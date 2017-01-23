@@ -149,7 +149,6 @@ public final class TableDefinitions {
         .add("id", DataTypes.INTEGER, null)
         .add("name", DataTypes.STRING, null)
         .add("date", DataTypes.TIMESTAMP, null, true)
-        .add("obj", DataTypes.OBJECT, null, ColumnPolicy.DYNAMIC)
         .build();
     public static final TableIdent PARTED_PKS_IDENT = new TableIdent(Schemas.DEFAULT_SCHEMA_NAME, "parted_pks");
     public static final DocTableInfo PARTED_PKS_TI = new TestingTableInfo.Builder(
